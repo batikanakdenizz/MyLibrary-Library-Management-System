@@ -21,12 +21,20 @@ This project provides the following features for users to manage their libraries
 * **Database Integration:**
     * Robust data storage infrastructure using MySQL.
 
-## 🛠️ Technologies
+## 🛠️ Tech Stack & Tools
 
-* **Language:** Java (JDK 8+)
-* **Interface:** Java Swing (JFrame)
-* **Database:** MySQL
-* **Connectivity:** JDBC (MySQL Connector)
+This project utilizes a comprehensive set of technologies for development, design, and data management:
+
+* **Programming Language:** Java (JDK 8+)
+* **User Interface (GUI):** Java Swing, AWT
+* **Database System:** MySQL (v8.0.42)
+* **Data Connectivity:** JDBC (Java Database Connectivity)
+* **Security & Cryptography:** Java Security API (SHA-256 Hashing for passwords)
+* **Development Environment (IDE):** Apache NetBeans 25
+* **Analysis & Design Tools:**
+    * **UML & DFD Modeling:** Visual Paradigm 17.1
+    * **Database Design:** MySQL Workbench
+* **Build System:** Apache Ant (Native NetBeans Build)
 
 ## ⚙️ Installation & Setup
 
