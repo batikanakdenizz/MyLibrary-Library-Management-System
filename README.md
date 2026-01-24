@@ -2,7 +2,7 @@
 
 MyLibrary is a Java-based desktop application designed to manage personal book collections, reading lists, and favorite authors.
 
-Detailed explanation A detailed system analysis and project report can be found in the **MyLibrary_System_SRS_Document](MyLibrary_System_SRS_Document.pdf)** file.
+Detailed explanation A detailed system analysis and project report can be found in the **[MyLibrary_System_SRS_Document](MyLibrary_System_SRS_Document.pdf)** file.
 
 ##  Features
 
