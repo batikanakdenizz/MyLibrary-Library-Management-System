@@ -1,6 +1,6 @@
 # MyLibrary - Library Management System 📚
 
-MyLibrary is a Java-based desktop application designed to manage personal book collections, reading lists, and favorite authors.
+MyLibrary is a Java-based desktop application designed to manage personal book collections, reading lists, and favorite authors. It was developed as a final project for the **SE2232 Software System Analysis** course.
 
 ##  Features
 
@@ -40,3 +40,13 @@ Follow these steps to run the project on your local machine:
 3.  Open `src/DataBase.java` and update the connection details with your own MySQL credentials:
     ```java
     private static final String URL = "jdbc:mysql://localhost:3306/library";
+    private static final String USER = "root";
+    private static final String PASSWORD = "YOUR_PASSWORD";
+    ```
+
+### 3. Running the Application
+You can start the application by compiling and running the `src/LIBRARY.java` class.
+
+```bash
+javac src/*.java
+java src/LIBRARY
