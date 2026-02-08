@@ -1,4 +1,4 @@
-# MyLibrary - Library Management System 📚
+# MyLibrary - Library Management System  📚
 
 MyLibrary is a Java-based desktop application designed to manage personal book collections, reading lists, and favorite authors.
 
