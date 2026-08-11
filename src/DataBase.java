@@ -23,11 +23,15 @@ import javax.swing.JOptionPane;
  * @author batik
  */
 public class DataBase {
-     private static String SECRET_KEY = "L0ZRUIWjsQgPf74IEAHO5w==";
-    private static final String URL = "jdbc:mysql://localhost:3306/library";
-    private static final String USER = "root";
-    private static final String PASSWORD = "12345678";
-    public static final String EXTREMLY_SECURE_STRONG_PASSWORD = "123456789";
+    // Local development defaults; the password always comes from the environment.
+    // Set MYLIBRARY_DB_URL / MYLIBRARY_DB_USER / MYLIBRARY_DB_PASSWORD before running.
+    private static final String URL = System.getenv().getOrDefault(
+            "MYLIBRARY_DB_URL", "jdbc:mysql://localhost:3306/library");
+
+    private static final String USER = System.getenv().getOrDefault("MYLIBRARY_DB_USER", "root");
+
+    private static final String PASSWORD = System.getenv().getOrDefault("MYLIBRARY_DB_PASSWORD", "");
+
     private User user;
     private Connection connection;      //this part is inspired from Atabarış Hoca's example.
                                         // but we use different hash system that is SHA256.
