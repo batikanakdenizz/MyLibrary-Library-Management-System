@@ -47,11 +47,18 @@ Follow these steps to run the project on your local machine:
 ### 2. Database Configuration
 1.  Create a database named `library` in MySQL.
 2.  Import the `SQLMYLibrary.sql` file located in the project's root directory to create the necessary tables (`users`, `books`, `authors`).
-3.  Open `src/DataBase.java` and update the connection details with your own MySQL credentials:
-    ```java
-    private static final String URL = "jdbc:mysql://localhost:3306/library";
-    private static final String USER = "root";
-    private static final String PASSWORD = "YOUR_PASSWORD";
+3.  Set the database credentials as environment variables. They are read at startup, so no
+    password is stored in the source:
+    ```bash
+    export MYLIBRARY_DB_USER=root
+    export MYLIBRARY_DB_PASSWORD=your_password
+    # optional; defaults to jdbc:mysql://localhost:3306/library
+    export MYLIBRARY_DB_URL="jdbc:mysql://localhost:3306/library"
+    ```
+    On Windows PowerShell:
+    ```powershell
+    $env:MYLIBRARY_DB_USER = "root"
+    $env:MYLIBRARY_DB_PASSWORD = "your_password"
     ```
 
 ### 3. Running the Application
