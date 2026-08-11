@@ -62,8 +62,19 @@ Follow these steps to run the project on your local machine:
     ```
 
 ### 3. Running the Application
-You can start the application by compiling and running the `src/LIBRARY.java` class.
+Compile into an output directory and run the `LIBRARY` class. Every class lives in the default
+package, so the class name carries no path prefix.
 
 ```bash
-javac src/*.java
-java src/LIBRARY
+javac -d out src/*.java
+
+# the MySQL Connector/J jar has to be on the classpath
+java -cp "out:/path/to/mysql-connector-j.jar" LIBRARY
+```
+
+On Windows PowerShell (note the `;` classpath separator):
+
+```powershell
+javac -d out src\*.java
+java -cp "out;C:\path\to\mysql-connector-j.jar" LIBRARY
+```
